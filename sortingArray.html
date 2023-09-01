@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting array</title>
+</head>
+<body>
+    <!-- menampilkan function di body html -->
+    <p id="keluaran"></p>
+    <p id="keluaran2"></p>
+    <script>
+        let numbers = [10, 11, 31, 5, 1, 9, 3, 20 ];
+        numbers.sort( function( a , b){
+            if(a > b) return 1;
+            if(a < b) return -1;
+            return 0;
+        });
+
+        console.log(numbers);
+        numbers.sort(function(a, b)
+        {
+            return b-a
+        });
+        //menampilkan di console
+        console.log(numbers[1]);
+
+        //menampilkan di dokumen html
+        document.getElementById('keluaran').textContent = numbers;
+        document.getElementById('keluaran2').textContent = numbers[1];
+    </script>
+</body>
+</html>

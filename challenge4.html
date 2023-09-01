@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Challenge 4</title>
+</head>
+<body>
+    <!-- get id dari script -->
+    <p id="baris1"></p>
+    <p id="baris2"></p>
+
+    <!-- script js nya -->
+    <script>
+        //membuat function untuk mengubah kata
+        function changeWord(selectedText, changedText, text) {
+        let newStr = text.replace(selectedText, changedText);
+        return newStr;
+      }
+      const kalimat1 = "Andini suka makan mie";
+      const kalimat2 = "Gunung bromo meletus";
+
+      const result1 = changeWord("suka", "tidak suka", kalimat1);
+      const result2 = changeWord("meletus", "tidak meletus", kalimat2);
+
+      //Keluar di Console
+      console.log(changeWord("suka", "tidak suka", kalimat1));
+      console.log(changeWord("meletus", "tidak meletus", kalimat2));
+
+      //agar tampil di dokumen HTML
+      document.getElementById("baris1").textContent= result1;
+      document.getElementById("baris2").textContent= result2;
+    </script>
+</body>
+</html>

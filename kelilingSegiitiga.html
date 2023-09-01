@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelilong segitiga</title>
+</head>
+<body>
+    <p id="keluaran"></p>
+    <script>
+         //mebuat function keliling segitiga
+        let sisiA, sisiB, sisiC;
+        function kelilingSegitiga(sisiA, sisiB, sisiC) {
+            const hasil = sisiA+sisiB+sisiC
+            console.log(hasil);
+            return hasil;
+        }
+        kelilingSegitiga(6,8,5);
+
+        //buat variabel untuk dipanggil di get elemen
+        let hasilKeliling = kelilingSegitiga(6,8,5);
+        //panggil
+        document.getElementById('keluaran').textContent = hasilKeliling;
+    </script>
+</body>
+</html>

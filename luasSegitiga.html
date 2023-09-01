@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout room</title>
+</head>
+<body>
+    <h1>Luas Segitiga</h1>
+    <br>
+    <p id="keluaran"></p>
+    <script>
+        //deklarasi variabel
+        let alas = 4, tinggi = 5;
+        // membuat function luas luasSegitiga
+        function luasSegitiga(alas, tinggi) {
+            const hasil = alas * tinggi / 2;
+            console.log(hasil);
+            return hasil;
+        }
+        luasSegitiga(alas,tinggi);
+
+        //var ini digunaakn agar bisa di panggil di html dokumen
+        const varLuas = luasSegitiga(alas,tinggi);
+        //untuk menampilkan hasil di html body
+        document.getElementById('keluaran').textContent= varLuas;
+    </script>
+</body>
+</html>

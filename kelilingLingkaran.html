@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="keluaran"></p>
+    <script>
+         //membuat function keliling lingkaran
+         function luasLingkaran(r) {
+            const phi = 3.14;
+            rumusLingkaran = phi * (2 * r);
+            return rumusLingkaran;
+        }
+
+            let r = 50;
+            let luas_lingkaran = luasLingkaran(r);
+            
+            //output keluar di console
+            console.log("Luas: " + luas_lingkaran);
+            //output keluar di dookumen html
+            document.getElementById('keluaran').textContent = luasLingkaran(r);
+    </script>
+</body>
+</html>
